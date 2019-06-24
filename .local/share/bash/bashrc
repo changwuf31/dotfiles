@@ -1,1 +1,1 @@
-alias wuf31="SHELL=/bin/zsh toolbox enter"
+alias wuf31="SHELL=/bin/fish toolbox enter"

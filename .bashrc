@@ -179,3 +179,5 @@ if [ -f ~/.local/share/bash/.bashrc ]; then
 	. ~/.local/share/bash/.bashrc
 fi
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
