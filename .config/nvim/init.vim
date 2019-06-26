@@ -8,6 +8,11 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Fish shell workaround
+if &shell =~# 'fish$'
+    set shell=sh
+endif
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -50,6 +55,13 @@ Plug 'https://gitlab.com/protesilaos/tempus-themes-vim.git'
 " Initialize plugin system
 call plug#end()
 
+"
+" Shortcuts
+"
+" [DateTime](#http://blog.erw.dk/2016/04/19/entering-dates-and-times-in-vim/)
+noremap! <expr> ,T strftime("%H:%M:%S")
+noremap! <expr> ,d strftime("%Y-%m-%d")
+noremap! <expr> ,l strftime("%Y-%m-%d %H:%M")
 
 "
 " Theme Settings
