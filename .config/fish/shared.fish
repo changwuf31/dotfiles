@@ -4,11 +4,15 @@ set SPACEFISH_PROMPT_ORDER time user dir host git package node golang php docker
 # Global Variables
 set -gx PATH ~/.fzf/bin ~/bin $PATH
 set -gx YEAR (date +%Y)
+set -gx EDITOR nvim
+set -gx TODOTXT_DEFAULT_ACTION ls
+set -gx TODOTXT_DATE_ON_ADD 1
 
 # Aliases
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias j='vim ~/archive/$YEAR/journal.md'
+alias t='todo.sh'
 
 function bind_bang
   switch (commandline -t)
