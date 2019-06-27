@@ -25,13 +25,14 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Dependencies
 
 " General plugins
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
-Plug 'kien/ctrlp.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'godlygeek/tabular'
+"Plug 'tpope/vim-fugitive'
+"Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/syntastic'
+"Plug 'kien/ctrlp.vim'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
+Plug 'miyakogi/conoline.vim'
 
 " Language support
 Plug 'aklt/plantuml-syntax'                    " PlantUML syntax highlighting
