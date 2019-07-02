@@ -11,8 +11,9 @@ set -gx EDITOR vim
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias i='cd ~/archive/$YEAR/draft; vim inbox-zero.md'
 alias j='cd ~/archive/$YEAR/draft; vim journal.md'
-alias p='cd ~/archive/$YEAR/draft; vim policy.md'
 alias t='todo.sh'
+alias td='todo.sh lf delegation'
+alias tda='todo.sh addto delegation.txt'
 
 function bind_bang
   switch (commandline -t)
