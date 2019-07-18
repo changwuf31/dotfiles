@@ -12,8 +12,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias i='cd ~/archive/$YEAR/draft; vim inbox-zero.md'
 alias j='cd ~/archive/$YEAR/draft; vim journal.md'
 alias t='todo.sh'
-alias td='todo.sh lf delegation'
-alias tda='todo.sh addto delegation.txt'
+alias tb='todo.sh -d ~/.config/todo/backlog'
+alias td='todo.sh -d ~/.config/todo/delegation'
+alias tp='todo.sh -d ~/.config/todo/project'
 
 function bind_bang
   switch (commandline -t)
